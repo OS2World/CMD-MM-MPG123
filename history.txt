@@ -1,0 +1,17 @@
+
+0.20 April 25, 1998
+====
+
+- rew and ffwd changed to toggle mode
+- added some trash buffers behaviors, making mpg123 latency less even with
+  big buffers.
+- the timer now show the time played, not decoded
+- added MP3->WAV routines
+- when buffers are trashed for rew and ffwd, the mpeg stream file position
+  is brought to the file position that the decoder was at when it filled
+  the currently playing audio buffer.
+- max buffers locked to 200 and min to 5. these are 16KB buffers, and they
+  seem like absolute limits anyway.
+- much better rewind and fast forward (makes jumptosecs work a lot better too)
+- reporting errors should be more reliable
+- the timer now display to stderr, so -s works again.
