@@ -5,7 +5,8 @@ Command line MP3->WAV decoder.
 
 LICENSE
 ===============
-- 
+- GNU GPL V2
+
 COMPILE TOOLS
 ===============
 * 
